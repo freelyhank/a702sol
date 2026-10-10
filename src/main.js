@@ -1,0 +1,4 @@
+import { createApp } from 'vue';
+import App from './App.vue';
+import './styles/quilsted-workbench.css';
+createApp(App).mount('#app');
