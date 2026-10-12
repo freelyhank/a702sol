@@ -1,4 +1,4 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import './styles/quilsted-workbench.css';
+import './styles/tallyvein-terminal.css';
 createApp(App).mount('#app');
