@@ -82,7 +82,7 @@ const {
   refreshAll,
   updateWalletStats,
 } = useMissions();
-const logo = import.meta.env.BASE_URL + "tallyvein-mark.svg";
+const logo = import.meta.env.BASE_URL + "yovinx-mark.svg";
 /* New deck state: the terminal reads a clock, the tab rail carries a lane, the
    filter bar carries a state, and the inspector opens as a sheet on narrow
    screens. Every other value still comes from useMissions(). */
@@ -450,7 +450,7 @@ function downloadBrief() {
   const text = [
     "# " + (f.title || "Untitled brief"),
     "",
-    "Tallyvein / " + f.category,
+    "YOVINX / " + f.category,
     "",
     "## Bounty brief",
     f.description || "Add scope, primary sources and acceptance criteria here.",
@@ -472,7 +472,7 @@ function downloadBrief() {
   );
   const anchor = document.createElement("a");
   anchor.href = url;
-  anchor.download = "tallyvein-bounty-brief.md";
+  anchor.download = "yovinx-bounty-brief.md";
   anchor.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
   notify(
@@ -553,7 +553,7 @@ onBeforeUnmount(() => {
       <button
         class="chain-brand"
         type="button"
-        aria-label="Tallyvein home"
+        aria-label="YOVINX home"
         @click="
           selectLane('board');
           backToTop();
@@ -561,7 +561,7 @@ onBeforeUnmount(() => {
       >
         <img :src="logo" alt="" width="26" height="26" />
         <span class="chain-wordmark"
-          ><b>TALLYVEIN</b><span>Open the brief. Settle the tally.</span></span
+          ><b>YOVINX</b><span>Two paths in. One record out.</span></span
         >
       </button>
       <ChainReadout
@@ -694,7 +694,7 @@ onBeforeUnmount(() => {
         aria-labelledby="board-title"
         tabindex="-1"
       >        <h1 id="board-title" class="sr-only">
-          Tallyvein brief registry — {{ viewLabel(activeView) }}
+          YOVINX brief registry — {{ viewLabel(activeView) }}
         </h1>
         <BriefRegistry
           :missions="registryItems"
@@ -786,8 +786,8 @@ onBeforeUnmount(() => {
            sits in the main landmark; the fixed strip is the one contentinfo. -->
       <div v-if="lane === 'guide'" class="site-footer">
         <p class="footer-line">
-          &copy; 2026 Tallyvein <i class="footer-divider">/</i> Open the brief.
-          Settle the tally.<i class="footer-divider">/</i>
+          &copy; 2026 YOVINX <i class="footer-divider">/</i> Two paths in. One record
+          out.<i class="footer-divider">/</i>
           {{ SOLANA_CLUSTER.toUpperCase() }}
           {{ configured && SOLANA_PROGRAM_ID ? "· PROGRAM GATED" : "· PREVIEW" }}
         </p>
@@ -829,7 +829,7 @@ onBeforeUnmount(() => {
       >
         <div class="nav-sheet-head">
           <img :src="logo" alt="" width="22" height="22" />
-          <span class="micro">tallyvein / navigation</span>
+          <span class="micro">yovinx / navigation</span>
           <button
             class="icon-button"
             aria-label="Close menu"
@@ -951,7 +951,7 @@ onBeforeUnmount(() => {
                 <UiIcon name="info" :size="15" />
                 <p>
                   Publish your brief on a public host, then paste its URL below.
-                  Draft text is not uploaded or stored on-chain by Tallyvein.
+                  Draft text is not uploaded or stored on-chain by YOVINX.
                 </p>
               </div>
               <label for="brief-uri">Public brief URL</label
@@ -1240,7 +1240,7 @@ onBeforeUnmount(() => {
                 <p>
                   {{
                     configured
-                      ? "Tallyvein runs on Solana testnet. Testnet SOL has no intended monetary value."
+                      ? "YOVINX runs on Solana testnet. Testnet SOL has no intended monetary value."
                       : "Sample briefs let you explore topics, save records, and draft a brief. They are examples with illustrative rewards and cannot receive transactions."
                   }}
                   This preview is educational. Keep private information off-chain.

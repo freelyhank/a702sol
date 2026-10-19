@@ -13,9 +13,9 @@ defineEmits(["start", "board", "top"]);
   <div id="guide" class="guide-view">
     <section class="guide-intro" aria-labelledby="guide-title">
       <p class="micro">the bounty loop</p>
-      <h1 id="guide-title">Open the brief.<span>Settle the tally.</span></h1>
+      <h1 id="guide-title">Two paths in.<span>One record out.</span></h1>
       <p>
-        Tallyvein is a Solana bounty market for builder work, public evidence and
+        YOVINX is a Solana bounty market for builder work, public evidence and
         creator-led review. A creator publishes a brief and funds a pool; builders
         answer with source-linked work; the creator reads every entry before a
         single unit is allocated.
@@ -73,7 +73,7 @@ defineEmits(["start", "board", "top"]);
           <div class="note">
             <UiIcon name="network" :size="15" />
             <p>
-              <strong>Independent project.</strong> Tallyvein is built for Solana
+              <strong>Independent project.</strong> YOVINX is built for Solana
               testnet and is not affiliated with, endorsed by, or operated by
               Solana Labs.
             </p>
@@ -101,7 +101,7 @@ defineEmits(["start", "board", "top"]);
             </summary>
             <p>
               Rewards use testnet SOL, which has no intended monetary value.
-              Tallyvein has no platform token, no investment return and no
+              YOVINX has no platform token, no investment return and no
               guaranteed payout.
             </p>
           </details>
@@ -131,7 +131,7 @@ defineEmits(["start", "board", "top"]);
             </summary>
             <p>
               On this device only. Bookmarks are stored in local storage under the
-              tallyvein-saved key, and older project keys migrate into it without
+              yovinx-saved key, and older project keys migrate into it without
               clearing your list.
             </p>
           </details>

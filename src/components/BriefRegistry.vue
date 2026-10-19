@@ -226,7 +226,7 @@ const actionLabel = (mission, index) =>
           filtered
             ? "Clear the search, topic or state filter and the full registry returns."
             : savedView
-              ? "Save a brief from any row and it is kept on this device under the tallyvein-saved key."
+              ? "Save a brief from any row and it is kept on this device under the yovinx-saved key."
               : activityView
                 ? "Connect the wallet you create briefs with, or post the first brief from this desk."
                 : viewNote || "Reload the samples or post the first brief to open the registry."
